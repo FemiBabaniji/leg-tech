@@ -3,9 +3,9 @@
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true, // ✅ Skips checking `.d.ts` files
     "strict": true,
-    "noEmit": true,
+    "noEmit": false, // ✅ Allows emitting files if needed
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",

@@ -10,7 +10,7 @@ import { EvidenceTab } from "@/components/evidence-tab"
 import { AnalysisTab } from "@/components/analysis-tab"
 import { HowItWorksModal } from "./how-it-works-modal"
 import { LegalAnalysisModal } from "./legal-analysis-modal"
-import type { LegalPrinciple, CaseEvidence, Inference } from "./types"
+import type { LegalPrinciple, CaseEvidence, Inference } from "../types"
 
 export default function ActiveInferenceWorkflow() {
   // Level 2 - Legal Principles (Deduction)

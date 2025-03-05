@@ -17,7 +17,9 @@ import {
   Cell,
   LineChart,
   Line,
-} from "@/components/ui/chart"
+} from "recharts"
+
+
 import { Download, Share2 } from "lucide-react"
 
 export default function AnalyticsDashboard() {

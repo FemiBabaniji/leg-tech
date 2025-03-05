@@ -1,6 +1,8 @@
 import { Scale, FileText, FileSearch, ArrowRight } from "lucide-react"
 import type { LegalPrinciple, CaseEvidence, Inference } from "../types"
 
+
+
 interface ModelTabProps {
   legalPrinciples: LegalPrinciple[]
   caseEvidence: CaseEvidence[]
