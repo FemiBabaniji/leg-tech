@@ -45,9 +45,9 @@ export default function LawsOfLegalTech() {
                   </div>
                 </div>
                 <div className="bg-[#1a2230] p-6 flex-grow">
-                  <h2 className="text-2xl font-bold mb-4">JTZ Contract Analysis</h2>
+                  <h2 className="text-2xl font-bold mb-4"> Contract Processing System</h2>
                   <p className="text-gray-300">
-                    Ontology-Driven Contract Review Platform with hierarchical legal reasoning framework. Leverages
+                    Contract Review Platform with hierarchical legal reasoning framework. Leverages
                     Active Inference Model for comprehensive legal analysis and recommendations.
                   </p>
                 </div>
