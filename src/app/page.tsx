@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ExternalLink, Globe, Menu } from "lucide-react"
+import { Globe, Lock, Menu } from "lucide-react"
 
 export default function LawsOfLegalTech() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -22,8 +22,6 @@ export default function LawsOfLegalTech() {
           <Menu className="w-6 h-6" />
         </button>
 
-        
-
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1">
             <Globe className="w-4 h-4" />
@@ -32,14 +30,11 @@ export default function LawsOfLegalTech() {
         </div>
       </header>
 
-      
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-16 text-center">
             Legal Technology Labs is a curated collection of best practices and insights for legal tech practices.
           </h1>
-
-         
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <Link href="/articles/article1" className="block">
@@ -54,14 +49,21 @@ export default function LawsOfLegalTech() {
                     Smart Contracts: Optimizing Legal Workflows in the Digital Age
                   </h2>
                   <p className="text-gray-300">
-                    Discover how smart contracts automate processes, reduce manual intervention, and enhance transparency in modern legal practices.
+                    Discover how smart contracts automate processes, reduce manual intervention, and enhance
+                    transparency in modern legal practices.
                   </p>
                 </div>
               </div>
             </Link>
 
-            <Link href="/articles/article2" className="block">
-              <div className="bg-[#2a6d8f] rounded-lg overflow-hidden h-full flex flex-col">
+            {/* Locked Article 2 */}
+            <div className="block cursor-not-allowed relative">
+              <div className="bg-[#2a6d8f] rounded-lg overflow-hidden h-full flex flex-col opacity-70">
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                  <div className="bg-[#1a2230] p-4 rounded-full">
+                    <Lock className="w-10 h-10 text-white" />
+                  </div>
+                </div>
                 <div className="p-8 flex justify-center items-center">
                   <div className="grid grid-cols-5 gap-2">
                     {Array(25)
@@ -81,10 +83,16 @@ export default function LawsOfLegalTech() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </div>
 
-            <Link href="/articles/article3" className="block">
-              <div className="bg-[#c25b4e] rounded-lg overflow-hidden h-full flex flex-col">
+            {/* Locked Article 3 */}
+            <div className="block cursor-not-allowed relative">
+              <div className="bg-[#c25b4e] rounded-lg overflow-hidden h-full flex flex-col opacity-70">
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                  <div className="bg-[#1a2230] p-4 rounded-full">
+                    <Lock className="w-10 h-10 text-white" />
+                  </div>
+                </div>
                 <div className="p-8 flex justify-center items-center">
                   <div className="grid grid-cols-7 gap-1">
                     {Array(49)
@@ -110,11 +118,11 @@ export default function LawsOfLegalTech() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </main>
     </div>
   )
 }
- 
+
