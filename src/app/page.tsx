@@ -38,19 +38,17 @@ export default function LawsOfLegalTech() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <Link href="/articles/article1" className="block">
-              <div className="bg-[#3b4b6c] rounded-lg overflow-hidden h-full flex flex-col">
+              <div className="bg-[#8B7D39] rounded-lg overflow-hidden h-full flex flex-col">
                 <div className="p-8 flex justify-center items-center">
-                  <div className="w-32 h-32 bg-[#2a3a5a] rounded-full flex items-center justify-center">
-                    <div className="w-24 h-24 bg-[#f5f5dc] clip-triangle"></div>
+                  <div className="w-32 h-32 bg-[#5F4B10] rounded-full flex items-center justify-center">
+                    <div className="w-24 h-24 bg-[#BDB76B] clip-triangle"></div>
                   </div>
                 </div>
                 <div className="bg-[#1a2230] p-6 flex-grow">
-                  <h2 className="text-2xl font-bold mb-4">
-                    Smart Contracts: Optimizing Legal Workflows in the Digital Age
-                  </h2>
+                  <h2 className="text-2xl font-bold mb-4">JTZ Contract Analysis</h2>
                   <p className="text-gray-300">
-                    Discover how smart contracts automate processes, reduce manual intervention, and enhance
-                    transparency in modern legal practices.
+                    Ontology-Driven Contract Review Platform with hierarchical legal reasoning framework. Leverages
+                    Active Inference Model for comprehensive legal analysis and recommendations.
                   </p>
                 </div>
               </div>
